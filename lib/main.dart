@@ -113,7 +113,7 @@ class HomePage extends StatelessWidget {
                                  style: TextStyle(
                                    fontFamily: 'Digital7',
                                    color: Colors.black,
-                                   fontSize : 70.0,
+                                   fontSize : 75.0,
 
                                  ),
                                )
