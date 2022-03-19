@@ -64,7 +64,9 @@ class HomePage extends StatelessWidget {
                              color: Color.fromRGBO(93, 70, 47, 1),
                              size: 70.0,
                            ),
-                           TextButton(onPressed: null,
+                           RaisedButton(onPressed:(){},
+                               hoverColor: Color.fromRGBO(147, 112, 71, 1),
+                               padding: EdgeInsets.fromLTRB(20, 20, 20, 30),
 
                                child: Text (
                                  'play',
@@ -86,7 +88,9 @@ class HomePage extends StatelessWidget {
                              color: Color.fromRGBO(93, 70, 47, 1),
                              size: 65.0,
                            ),
-                           TextButton(onPressed: null,
+                           RaisedButton(onPressed:(){},
+                               hoverColor: Color.fromRGBO(147, 112, 71, 1),
+                               padding: EdgeInsets.fromLTRB(20, 20, 20, 30),
                                child: Text (
                                  'Options',
                                  style: TextStyle(
@@ -105,9 +109,11 @@ class HomePage extends StatelessWidget {
                            Icon(
                              Icons.military_tech_sharp ,
                              color: Color.fromRGBO(93, 70, 47, 1),
-                             size: 60.0,
+                             size: 70.0,
                            ),
-                           TextButton(onPressed: null,
+                           RaisedButton(onPressed:(){},
+                               hoverColor: Color.fromRGBO(147, 112, 71, 1),
+                               padding: EdgeInsets.fromLTRB(20, 20, 20, 30),
                                child: Text (
                                  'Credits',
                                  style: TextStyle(
