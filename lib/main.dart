@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'play_page (1).dart';
+import 'option_page (1).dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,9 +20,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -64,7 +70,10 @@ class HomePage extends StatelessWidget {
                              color: Color.fromRGBO(93, 70, 47, 1),
                              size: 70.0,
                            ),
-                           RaisedButton(onPressed:(){},
+                           RaisedButton(onPressed:(){
+                             Navigator.push(context, MaterialPageRoute(builder: (context)=>playPage())
+                               );
+                           },
                                hoverColor: Color.fromRGBO(147, 112, 71, 1),
                                padding: EdgeInsets.fromLTRB(20, 20, 20, 30),
 
@@ -77,7 +86,8 @@ class HomePage extends StatelessWidget {
 
                                  ),
                                )
-                           )                         ],
+                           )
+                         ],
                        ),
                        SizedBox(height : 45.0),
                        Row(
@@ -88,7 +98,10 @@ class HomePage extends StatelessWidget {
                              color: Color.fromRGBO(93, 70, 47, 1),
                              size: 65.0,
                            ),
-                           RaisedButton(onPressed:(){},
+                           RaisedButton(onPressed:(){
+                             Navigator.push(context, MaterialPageRoute(builder: (context)=>OptionPage())
+                             );
+                           },
                                hoverColor: Color.fromRGBO(147, 112, 71, 1),
                                padding: EdgeInsets.fromLTRB(20, 20, 20, 30),
                                child: Text (
@@ -111,7 +124,10 @@ class HomePage extends StatelessWidget {
                              color: Color.fromRGBO(93, 70, 47, 1),
                              size: 70.0,
                            ),
-                           RaisedButton(onPressed:(){},
+                           RaisedButton(onPressed:(){
+                             Navigator.push(context, MaterialPageRoute(builder: (context)=>OptionPage())
+                             );
+                           },
                                hoverColor: Color.fromRGBO(147, 112, 71, 1),
                                padding: EdgeInsets.fromLTRB(20, 20, 20, 30),
                                child: Text (
@@ -137,3 +153,5 @@ class HomePage extends StatelessWidget {
 
   }
 }
+
+
