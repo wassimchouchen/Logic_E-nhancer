@@ -2,6 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'main.dart';
+import 'levels.dart';
+import 'lessons.dart';
+
 // ignore: camel_case_types
 class playPage extends StatefulWidget {
   @override
@@ -46,7 +49,10 @@ class _playPageState extends State<playPage> {
               SizedBox(
                 width: 500,
                 child: RaisedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Levels())
+                  );
+                },
                 textColor: const Color.fromRGBO(36, 31, 28, 1),
                 color: const Color.fromRGBO(93, 70, 47, 1),
                 hoverColor: const Color.fromRGBO(147, 112, 71, 1),
@@ -71,7 +77,9 @@ class _playPageState extends State<playPage> {
               ),) ,SizedBox(height: 40), SizedBox(
                 width: 500,
                 child: RaisedButton(
-                onPressed: () {},
+                onPressed: () {
+                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Lessons())
+                   );},
                 textColor: const Color.fromRGBO(36, 31, 28, 1),
                 color: const Color.fromRGBO(93, 70, 47, 1),
                 hoverColor: const Color.fromRGBO(147, 112, 71, 1),
